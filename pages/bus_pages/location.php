@@ -42,13 +42,13 @@
 </section>
 <script>
 	$('#new_location').click(function(){
-		uni_modal('Add New Location','manage_location.php')
+		uni_modal('Add New Location','pages/bus_pages/manage_location.php')
 	})
 	window.load_location = function(){
 		$('#location-field').dataTable().fnDestroy();
 		$('#location-field tbody').html('<tr><td colspan="5" class="text-center">Please wait...</td></tr>')
 		$.ajax({
-			url:'load_location.php',
+			url:'pages/bus_pages/load_location.php',
 			error:err=>{
 				console.log(err)
 				alert_toast('An error occured.','danger');
@@ -89,7 +89,7 @@
 	}
 	function manage(){
 		$('.edit_location').click(function(){
-		uni_modal('Edit New Location','manage_location.php?id='+$(this).attr('data-id'))
+		uni_modal('Edit New Location','pages/bus_pages/manage_location.php?id='+$(this).attr('data-id'))
 
 		})
 		$('.remove_location').click(function(){
@@ -100,7 +100,7 @@
 	function remove_location($id=''){
 		start_load()
 		$.ajax({
-			url:'delete_location.php',
+			url:'pages/bus_pages/delete_location.php',
 			method:'POST',
 			data:{id:$id},
 			error:err=>{

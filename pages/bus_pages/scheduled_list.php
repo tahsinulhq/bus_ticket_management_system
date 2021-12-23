@@ -55,13 +55,13 @@
 </section>
 <script>
 	$('#new_schedule').click(function(){
-		uni_modal('Add New Schedule','manage_schedule.php')
+		uni_modal('Add New Schedule','pages/bus_pages/manage_schedule.php')
 	})
 	window.load_schedule = function(){
 		$('#schedule-field').dataTable().fnDestroy();
 		$('#schedule-field tbody').html('<tr><td colspan="7" class="text-center">Please wait...</td></tr>')
 		$.ajax({
-			url:'load_schedule2.php',
+			url:'pages/bus_pages/load_schedule2.php',
 			method:'POST',
 			data:{id:'<?php echo $_GET['id'] ?>',from_location:'<?php echo $_GET['from_location'] ?>',to_location:'<?php echo $_GET['to_location'] ?>',departure_time:'<?php echo $_GET['departure_time'] ?>'},
 			error:err=>{
@@ -100,7 +100,7 @@
 			complete:function(){
 				$('#schedule-field').dataTable()
 				$('.book_now').click(function(){
-					uni_modal('Book Details','customer_book.php?id='+$(this).attr('data-id'),1)
+					uni_modal('Book Details','pages/bus_pages/customer_book.php?id='+$(this).attr('data-id'),1)
 				})
 			}
 		})

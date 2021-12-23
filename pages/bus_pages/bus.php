@@ -37,13 +37,13 @@
 </section>
 <script>
     $('#new_bus').click(function() {
-        uni_modal('Add New Bus', 'manage_bus.php')
+        uni_modal('Add New Bus', 'pages/bus_pages/manage_bus.php')
     })
     window.load_bus = function() {
         $('#bus-field').dataTable().fnDestroy();
         $('#bus-field tbody').html('<tr><td colspan="4" class="text-center">Please wait...</td></tr>')
         $.ajax({
-            url: 'load_bus.php',
+            url: 'pages/bus_pages/load_bus.php',
             error: err => {
                 console.log(err)
                 alert_toast('An error occured.', 'danger');
@@ -80,7 +80,7 @@
 
     function manage() {
         $('.edit_bus').click(function() {
-            uni_modal('Edit New Bus', 'manage_bus.php?id=' + $(this).attr('data-id'))
+            uni_modal('Edit New Bus', 'pages/bus_pages/manage_bus.php?id=' + $(this).attr('data-id'))
 
         })
         $('.remove_bus').click(function() {
@@ -92,7 +92,7 @@
     function remove_bus($id = '') {
         start_load()
         $.ajax({
-            url: 'delete_bus.php',
+            url: 'pages/bus_pages/delete_bus.php',
             method: 'POST',
             data: {
                 id: $id

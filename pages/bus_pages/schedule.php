@@ -55,13 +55,13 @@
 </section>
 <script>
 	$('#new_schedule').click(function(){
-		uni_modal('Add New Schedule','manage_schedule.php')
+		uni_modal('Add New Schedule','pages/bus_pages/manage_schedule.php')
 	})
 	window.load_schedule = function(){
 		$('#schedule-field').dataTable().fnDestroy();
 		$('#schedule-field tbody').html('<tr><td colspan="7" class="text-center">Please wait...</td></tr>')
 		$.ajax({
-			url:'load_schedule.php',
+			url:'pages/bus_pages/load_schedule.php',
 			error:err=>{
 				console.log(err)
 				alert_toast('An error occured.','danger');
@@ -103,14 +103,14 @@
 				$('#schedule-field').dataTable()
 				manage();
 				$('.book_now').click(function(){
-					uni_modal('Book Details','customer_book.php?id='+$(this).attr('data-id'),1)
+					uni_modal('Book Details','pages/bus_pages/customer_book.php?id='+$(this).attr('data-id'),1)
 				})
 			}
 		})
 	}
 	function manage(){
 		$('.edit_schedule').click(function(){
-		uni_modal('Edit New Schedule','manage_schedule.php?id='+$(this).attr('data-id'))
+		uni_modal('Edit New Schedule','pages/bus_pages/manage_schedule.php?id='+$(this).attr('data-id'))
 
 		})
 		$('.remove_schedule').click(function(){
@@ -121,7 +121,7 @@
 	function remove_schedule($id=''){
 		start_load()
 		$.ajax({
-			url:'delete_schedule.php',
+			url:'pages/bus_pages/delete_schedule.php',
 			method:'POST',
 			data:{id:$id},
 			error:err=>{
