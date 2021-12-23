@@ -2,7 +2,7 @@
  
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-            <a href="#" class="navbar-brand">Invision</a>
+            <a href="#" class="navbar-brand">BTMS</a>
 
             <button 
             class="navbar-toggler" 
