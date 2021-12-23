@@ -27,7 +27,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         e.preventDefault()
         start_load()
         $.ajax({
-            url: './save_bus.php',
+            url: 'pages/bus_pages/save_bus.php',
             method: 'POST',
             data: $(this).serialize(),
             error: err => {

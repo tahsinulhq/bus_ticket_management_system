@@ -31,7 +31,7 @@ if(isset($_GET['id']) && !empty($_GET['id']) ){
 		e.preventDefault()
 		start_load()
 		$.ajax({
-			url:'./save_location.php',
+			url:'pages/bus_pages/save_location.php',
 			method:'POST',
 			data:$(this).serialize(),
 			error:err=>{
