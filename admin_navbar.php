@@ -12,23 +12,29 @@
         <li class="nav-home"><a href="./index.php?page=home" class="nav-link">Home</a></li>
         <li class="nav-schedule"><a href="./index.php?page=pages/bus_pages/schedule" class="nav-link">Schedule</a></li>
         <li class="nav-booked"><a href="./index.php?page=pages/bus_pages/booked" class="nav-link">Booked List</a></li>
-        <li class="drop-down nav-bus nav-location" ><a class="nav-link dropdown-toggle" href="#" 
-            id="navbarDarkDropdownMenuLink" 
-			 			role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Maintenance</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+        <!-- dropdown option -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" i d="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Maintenance</a>
+
+          <!-- dropdown contents -->
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
             <li><a class="dropdown-item" href="./index.php?page=pages/bus_pages/bus">Bus List</a></li>
             <li><a class="dropdown-item" href="./index.php?page=pages/bus_pages/location">Location List</a></li>
-
-
           </ul>
         </li>
-        <li class="drop-down nav-user"><a href="#" class="nav-link"><?php echo $_SESSION['login_name'] ?> </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="./index.php?page=user">Users</a></li>
+        
+        <!-- dropdown option -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" i d="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <?php echo $_SESSION['login_name'] ?> </a>
+
+          <!-- dropdown contents -->
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+          <li><a class="dropdown-item" href="./index.php?page=user">Users</a></li>
             <li><a class="dropdown-item" href="javascript:void(0)" id="manage_account">Manage Account</a></li>
             <li><a class="dropdown-item" href="./logout.php">Logout</a></li>
-
           </ul>
         </li>
       </ul>
