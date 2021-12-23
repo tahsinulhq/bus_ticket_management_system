@@ -2,13 +2,7 @@
 <html>
 	<head>
 		<?php include('header.php') ?>
-        <?php 
-        // session_start();
-        // if(isset($_SESSION['login_id'])){
-        //     header('Location:home.php');
-        // }
-        ?>
-		<title>Admin Login |Bus Booking</title>
+		<title>Admin Login | Bus Booking</title>
 	</head>
     <style>
         body {
