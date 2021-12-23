@@ -67,7 +67,7 @@ $location = $conn->query("SELECT id,Concat(terminal_name,', ',city,', ',state) a
 		e.preventDefault()
 		start_load()
 		$.ajax({
-			url:'./save_schedule.php',
+			url:'pages/bus_pages/save_schedule.php',
 			method:'POST',
 			data:$(this).serialize(),
 			error:err=>{
