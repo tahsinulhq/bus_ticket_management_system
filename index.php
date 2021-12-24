@@ -103,8 +103,8 @@
     </footer>
     
     <!-- <div id="preloader"></div>
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-    <script src="assets/js/main.js"></script> -->
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+    <script src="assets/js/main.js"></script>
 </body>
 <script>
     window.uni_modal = function($title = '', $url = '', $book = 0) {
