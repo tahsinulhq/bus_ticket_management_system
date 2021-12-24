@@ -120,7 +120,7 @@ Back to top button
     height: 40px;
     border-radius: 50px;
     background: #1977cc;
-    color: #fff;
+    color: rgb(2, 2, 2);
     transition: all 0.4s;
 }
 
@@ -660,4 +660,52 @@ section {
     .breadcrumbs ol li {
         display: inline-block;
     }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    color: #444444;
+    font-size: 14px;
+    background: #f1f7fd;
+    position: absolute;
+    bottom: 0;
+}
+
+#header {
+    top: 0 !important;
+    height: 10vh;
+}
+
+main#main {
+    padding-top: 12vh !important;
+    width: 100%
+}
+
+.toast {
+    display: none;
+    min-width: 20vw
+}
+
+.toast.show {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    z-index: 999;
+    margin: 20px;
+    right: 0;
+    top: 2vh;
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 2px 5px;
+}
+
+button#book_now {
+    position: relative;
+    margin-top: 59vh;
 }

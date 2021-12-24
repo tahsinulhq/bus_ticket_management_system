@@ -40,7 +40,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title"></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -50,7 +50,7 @@
                         <button type="button" class="btn btn-primary submit" onclick="$('#uni_modal form').submit()">
                             <?php echo isset($_SESSION['login_id']) ? 'Save' : 'Find' ?>
                         </button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -91,6 +91,7 @@
             </div>
         </div>
     </section>
+    
 
 
     <!-- ======= Footer ======= -->
@@ -102,8 +103,8 @@
         </div>
     </footer>
     
-    <!-- <div id="preloader"></div>
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+    <div id="preloader"></div>
+    
     <script src="assets/js/main.js"></script>
 </body>
 <script>
@@ -167,5 +168,4 @@
     }
     $(document).ready(function() {})
 </script>
-
 </html>
