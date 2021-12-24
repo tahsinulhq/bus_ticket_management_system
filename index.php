@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTMS</title>
 
-
+    <!-- tab icon -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
 
 </head>
 
@@ -34,7 +35,7 @@
     ?>
 
     <!-- Main section -->
-    <section>
+    <section class="p-5">
         <div class="modal fadeIn" tabindex="-1" id="uni_modal">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -84,19 +85,12 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
-    
-    <section>
-        
-    </section>
-
-
+    <section></section>
     <!-- ======= Footer ======= -->
     <footer id="footer">
     <div class="footer-bottom">

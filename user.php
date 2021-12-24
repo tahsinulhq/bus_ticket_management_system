@@ -12,7 +12,9 @@
 			</div>
 			<div class="row">
 				<div class="card col-md-12">
-					
+				<div class="card-header">
+						<div class="card-title">User List</div>
+					</div>
 					<div class="card-body">
 						<table class="table table-striped table-dark table-bordered" id="user-field">
 							<thead>

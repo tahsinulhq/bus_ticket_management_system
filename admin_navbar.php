@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
   <div class="container">
-    <a href="#" class="navbar-brand">BTMS</a>
+  <a href="index.php" class="navbar-brand">
+            <img src="assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            BTMS</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <span class="navbar-toggler-icon"></span>

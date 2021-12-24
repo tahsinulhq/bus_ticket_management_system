@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="col-lg-5 order-2 order-lg-2 p-5">
-                        <h2 class="pb-2" id="footer-text">Contact_</h2>
+                        <h2 class="pb-2" id="footer-text">Contact Us</h2>
                         <form>
                             <div class="p-2 form-group">
                                 <label class="name-label " id="footer-text" for="name">Full Name:
