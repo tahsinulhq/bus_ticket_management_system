@@ -20,6 +20,11 @@
                     <li class="nav-schedule">
                         <a href="./index.php?page=pages/bus_pages/schedule" class="nav-link">Schedule</a>
                     </li>
+
+                    <li class="nav-contact">
+                        <a href="./index.php?page=contact" class="nav-link">Contact</a>
+                    </li>
+
                     <li class="nav-login">
                         <a href="./admin.php" class="btn btn-outline-secondary">Login</a>
                     </li>
