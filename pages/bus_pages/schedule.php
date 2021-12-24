@@ -1,18 +1,21 @@
 <section id="bg-bus" class="d-flex align-items-center">
 <main id="main">
-	<div class="container-fluid">
+	<div class="container-fluid ">
 		<div class="col-lg-12">
 			<?php  if(isset($_SESSION['login_id'])): ?>
-			<div class="row">
+                <section>
+                <div class="row">
+                
 				<div class="col-md-12">
 					<button class="float-right btn btn-primary btn-sm" type="button" id="new_schedule">Add New <i class="fa fa-plus"></i></button>
-				</div>
+				</div> 
 			</div>
 		<?php endif; ?>
-			<div class="row">
+			<!-- <div class="row">
 				&nbsp;
-			</div>
+			</div> -->
 			<div class="row">
+                
 				<div class="card col-md-12">
 					
 					<div class="card-body">
@@ -47,6 +50,7 @@
 						</table>
 					</div>
 				</div>
+                </section>
 			</div>
 		</div>
 		
