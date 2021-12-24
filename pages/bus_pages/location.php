@@ -18,7 +18,7 @@
 						<div class="card-title">Location List</div>
 					</div>
 					<div class="card-body">
-						<table class="table table-striped table-bordered" id="location-field">
+						<table class="table table-striped table-dark table-bordered" id="location-field">
 							<thead>
 								<tr>
 									<th class="text-center">#</th>

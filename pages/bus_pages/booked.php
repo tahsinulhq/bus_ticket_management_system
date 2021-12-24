@@ -16,7 +16,7 @@
 				<div class="card col-md-12">
 					
 					<div class="card-body">
-						<table class="table table-striped table-bordered" id="booked-field">
+						<table class="table table-striped table-dark table-bordered" id="booked-field">
 							
 							<thead>
 								<tr>

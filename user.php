@@ -14,7 +14,7 @@
 				<div class="card col-md-12">
 					
 					<div class="card-body">
-						<table class="table table-striped table-bordered" id="user-field">
+						<table class="table table-striped table-dark table-bordered" id="user-field">
 							<thead>
 								<tr>
 									<th class="text-center">#</th>

@@ -19,7 +19,7 @@
 				<div class="card col-md-12">
 					
 					<div class="card-body">
-						<table class="table table-striped table-bordered" id="schedule-field">
+						<table class="table table-striped table-dark table-bordered" id="schedule-field">
 							<colgroup>
 								<col width="5%">
 								<col width="10%">
