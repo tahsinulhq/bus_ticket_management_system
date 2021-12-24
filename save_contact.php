@@ -4,8 +4,9 @@ include 'db_connect.php';
 extract($_POST);
 if (!empty($_POST)) {
     // Store data in db
-    $q = "INSERT INTO contact(name, email, message)
-            VALUES ('{$name}', '{$email}', '{$message}')";
+
+    $q = "INSERT INTO contact(fname, email, message)
+            VALUES ('{$fname}', '{$email}', '{$message}')";
 
     $sql = mysqli_query($conn, $q);
 
@@ -18,4 +19,4 @@ if (!empty($_POST)) {
     $_SESSION['message'] = "Message couldn't be sent, try again";
 }
 
-// header("Location:contact.php");
+ header("Location:contact.php");

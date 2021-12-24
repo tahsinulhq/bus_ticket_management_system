@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <section class="footer-contact" id="contact">
     <div class="container">
         <div class="footer-upper">
@@ -39,9 +39,9 @@
 
                     <form name="contact-form" role="form" action="save_contact.php" method="post">
                         <div class="p-2 form-group">
-                            <label class="name-label " id="footer-text" for="name">Full Name:
+                            <label class="name-label " id="footer-text" for="fname">Full Name:
                             </label>
-                            <input type="text" class="form-control" name="name" placeholder="Enter Your Full Name Here">
+                            <input type="text" class="form-control" name="fname" placeholder="Enter Your Full Name Here">
                         </div>
 
                         <div class="p-2 form-group">
@@ -51,13 +51,13 @@
                         </div>
 
                         <div class="p-2 form-group">
-                            <label class="msg-label" id="footer-text" for="msg">Message:
+                            <label class="msg-label" id="footer-text" for="message">Message:
                             </label>
-                            <textarea class="form-control" name="message" cols="20" rows="10"></textarea>
+                            <textarea class="form-control" rows ="3" name="message" cols="20" rows="10"></textarea>
                         </div>
 
                         <div class="p-2 form-group">
-                        <button class="btn btn-success btn-lg">Submit</button>
+                        <button type="Submit" class="btn btn-success btn-lg">Submit</button>
                         </div>
                     </form>
                 </div>
