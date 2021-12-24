@@ -11,9 +11,9 @@
 				</div> 
 			</div>
 		<?php endif; ?>
-			<!-- <div class="row">
+			<div class="row">
 				&nbsp;
-			</div> -->
+			</div>
 			<div class="row">
                 
 				<div class="card col-md-12">
